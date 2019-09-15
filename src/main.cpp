@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #define PIN 2
+#define TIME_BLINK 1000
 
 bool state = LOW;
 void setup() {
@@ -11,5 +12,5 @@ void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(PIN, state);
   state = ! state;
-  delay(1000);
+  delay(TIME_BLINK);
 }
